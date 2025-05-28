@@ -7,12 +7,12 @@ pipeline {
     }   // this has to be added only if you get an error saying UTF required is 8 but showing in ISO00009
 
     tools {
-        maven 'Maven'  // Ensure this matches the name configured in Jenkins
+        maven 'Maven_3.8.7'  // Ensure this matches the name configured in Jenkins
     }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/SNEHARAJU21/MavenAnsibleWebApp.git'
+                git branch: 'master', url: 'https://github.com/SHASHANK9060/MavenAnsible-CICD.git'
             }
         }
 
